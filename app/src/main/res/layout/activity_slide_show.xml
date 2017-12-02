@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_silde_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abvrtridentroom.roomconfiguration.ui.SlideShowActivity"
+    android:background="@mipmap/back_getstarted">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout_title"
+        android:layout_height="42dp"
+        android:background="@color/title">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/logo"
+            android:id="@+id/imageButton_logo"
+            android:background="@color/transparent"
+            android:layout_marginLeft="11dp"
+            android:layout_alignBottom="@+id/textView_title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="11dp" />
+
+        <TextView
+            android:text="@string/slide_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_title"
+            android:textColor="@color/green"
+            android:textStyle="normal|bold"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:text="@string/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_back"
+            android:background="@drawable/round_start"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:minHeight="25dp"
+            android:minWidth="55dp"
+            android:layout_alignTop="@+id/imageButton_logo"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout_main">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/relativeLayout_slide"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/black">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+
+        </RelativeLayout>
+
+        <ImageButton
+            app:srcCompat="@mipmap/slide_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/imageButton_back"
+            android:background="@color/green_slide"
+            android:layout_height="60dp"
+            android:layout_width="35dp" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            app:srcCompat="@mipmap/slide_forward"
+            android:id="@+id/imageButton_forward"
+            android:background="@color/green_slide"
+            android:layout_marginRight="5dp"
+            android:layout_alignTop="@+id/imageButton_back"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

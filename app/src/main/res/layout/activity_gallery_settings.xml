@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gallery_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abvrtridentroom.roomconfiguration.ui.GallerySettingsActivity"
+    android:background="@mipmap/back_getstarted">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout_main"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/transparent"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeLayout_center">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_upload"
+            android:background="@drawable/round_upload"
+            android:layout_width="230dp"
+            android:layout_below="@+id/relativeLayout_center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:id="@+id/relativeLayout_overlay"
+                android:background="@drawable/round_upload_trans"
+                android:layout_width="65dp">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/imageView_upload"
+                android:layout_toEndOf="@+id/imageView_upload"
+                android:background="@color/green">
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:id="@+id/imageView_upload"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@mipmap/upload_gallery"
+                android:layout_width="55dp" />
+
+            <Button
+                android:text="@string/upload_galleries_database"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/button_upload"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:typeface="sans"
+                android:background="@color/transparent"
+                android:layout_toRightOf="@+id/imageView_upload"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:text="@string/select_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_select"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_alignTop="@+id/relativeLayout_gallery_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="8dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_gallery_name"
+            android:layout_marginBottom="30dp"
+            android:layout_above="@+id/relativeLayout_center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:background="@color/white"
+            android:layout_height="35dp"
+            android:layout_width="240dp">
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:id="@+id/imageView_arrow"
+                android:layout_centerVertical="true"
+                app:srcCompat="@mipmap/down"
+                android:scaleType="center"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp" />
+
+            <TextView
+                android:text="@string/select_gallery_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView_gallery_name"
+                android:layout_toLeftOf="@+id/imageView_arrow"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/green"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relativeLayout_list"
+            android:layout_alignRight="@+id/relativeLayout_gallery_name"
+            android:layout_alignLeft="@+id/relativeLayout_gallery_name"
+            android:layout_alignTop="@+id/relativeLayout_gallery_name"
+            android:layout_marginTop="35dp"
+            android:background="@color/white"
+            android:layout_height="160dp">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/linearLayout_list" />
+            </ScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout_title"
+        android:layout_height="42dp"
+        android:background="@color/title">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/logo"
+            android:id="@+id/imageButton_logo"
+            android:background="@color/transparent"
+            android:layout_marginLeft="11dp"
+            android:layout_alignBottom="@+id/textView_title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="11dp" />
+
+        <TextView
+            android:text="@string/gallery_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_title"
+            android:textColor="@color/green"
+            android:textStyle="normal|bold"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:text="@string/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_save"
+            android:background="@drawable/round_start"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:minHeight="25dp"
+            android:minWidth="55dp"
+            android:layout_alignTop="@+id/imageButton_logo"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+</RelativeLayout>

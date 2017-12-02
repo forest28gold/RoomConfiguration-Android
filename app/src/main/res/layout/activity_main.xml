@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:id="@+id/relativeLayout_menu"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp">
+
+        <Button
+            android:text="Floor"
+            android:layout_width="match_parent"
+            android:id="@+id/button_floor"
+            android:background="@color/transparent"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAllCaps="false" />
+
+        <Button
+            android:text="Curtains"
+            android:layout_width="match_parent"
+            android:id="@+id/button_curtains"
+            android:background="@color/transparent"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:layout_below="@+id/button_floor"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAllCaps="false" />
+
+        <Button
+            android:text="Wall"
+            android:layout_width="match_parent"
+            android:id="@+id/button_wall"
+            android:background="@color/transparent"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:layout_below="@+id/button_curtains"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/button_save"
+        android:background="@drawable/round_settings_upload"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:minHeight="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/relativeLayout_menu"
+        android:layout_alignEnd="@+id/relativeLayout_menu" />
+</RelativeLayout>

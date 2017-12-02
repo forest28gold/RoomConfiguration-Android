@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Room Configurator</string>
+
+    <string name="require_internet">*Requires internet connection for update database</string>
+    <string name="btn_start">START YOUR\nEXPERIENCES</string>
+    <string name="btn_update">UPDATE DATABASE</string>
+
+    <string name="btn_design">Design</string>
+    <string name="btn_gallery">Gallery</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_submit">Submit</string>
+    <string name="designs">Designs</string>
+    <string name="add_new_gallery">Add New Gallery</string>
+    <string name="enter_gallery_name">Enter Gallery Name</string>
+
+    <string name="btn_gallery_options">Gallery options</string>
+    <string name="btn_update_database">Update Database</string>
+    <string name="btn_upload_gallery">Upload Gallery</string>
+    <string name="btn_tutorials">Tutorials</string>
+    <string name="btn_reset">Reset</string>
+
+    <string name="gallery_settings">Gallery Settings</string>
+    <string name="select_default">Select default screenshot destination gallery</string>
+    <string name="select_gallery_name">Select Gallery Name</string>
+    <string name="upload_galleries_database">Upload galleries to\ndatabase</string>
+
+    <string name="slide_show">Slide Show</string>
+    <string name="btn_back">Back</string>
+
+    <string name="please_wait">Please wait ...</string>
+    <string name="alert">Alert</string>
+    <string name="ok">OK</string>
+    <string name="alert_input_gallery_name">Please enter gallery name</string>
+    <string name="alert_save_failed">Saving is failed</string>
+    <string name="alert_saved_successfully">Saved successfully</string>
+    <string name="alert_allow_permission">Please allow \"Storage Permission\"</string>
+
+</resources>

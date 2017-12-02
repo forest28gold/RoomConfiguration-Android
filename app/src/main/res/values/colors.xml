@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="dark">#767575</color>
+    <color name="gray">#d3d2d2</color>
+
+    <color name="green">#008568</color>
+    <color name="yellow">#fdb813</color>
+    <color name="title">#cc000000</color>
+    <color name="green_slide">#77008568</color>
+    <color name="darkgray">#23201b</color>
+
+    <color name="menu_dark">#43443f</color>
+    <color name="menu_gray">#d4d5d0</color>
+    <color name="menu_light_gray">#e2e1e0</color>
+
+    <color name="settings_update">#43443f</color>
+    <color name="settings_upload">#008568</color>
+    <color name="settings_tutorials">#c69014</color>
+    <color name="settings_reset">#2c2924</color>
+
+    <color name="header_title">#77000000</color>
+    <color name="gallery_right">#ddffffff</color>
+    <color name="gallery_select">#255e4d</color>
+
+</resources>

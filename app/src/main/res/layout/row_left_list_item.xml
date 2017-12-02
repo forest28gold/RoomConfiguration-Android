@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/green"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout_left_back">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:srcCompat="@mipmap/folder"
+			android:id="@+id/imageView_folder"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="10dp" />
+
+		<TextView
+            android:text="folder name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/left_list_item"
+			android:layout_below="@+id/imageView_folder"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:textColor="@color/white"
+			android:textSize="11sp"
+			android:typeface="sans"
+			android:gravity="center"
+			android:layout_marginLeft="7dp"
+			android:layout_marginRight="7dp"
+			android:layout_marginTop="3dp"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="5dp"
+			android:layout_below="@+id/left_list_item">
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>

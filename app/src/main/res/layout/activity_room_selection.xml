@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_room_selection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abvrtridentroom.roomconfiguration.ui.RoomSelectionActivity"
+    android:background="@mipmap/back_getstarted">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/logo"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageButton_logo"
+        android:background="@color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout_center">
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/room1"
+        android:id="@+id/imageButton_room1"
+        android:background="@color/green"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/relativeLayout_center"
+        android:layout_toStartOf="@+id/relativeLayout_center"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:padding="3dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/room2"
+        android:id="@+id/imageButton_room2"
+        android:background="@color/green"
+        android:padding="3dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_alignTop="@+id/imageButton_room1"
+        android:layout_toRightOf="@+id/relativeLayout_center"
+        android:layout_toEndOf="@+id/relativeLayout_center" />
+
+    <TextView
+        android:text="Room Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView_room1"
+        android:textColor="@color/green"
+        android:gravity="center"
+        android:textStyle="normal|bold"
+        android:textSize="16sp"
+        android:layout_below="@+id/imageButton_room1"
+        android:layout_alignLeft="@+id/imageButton_room1"
+        android:layout_alignStart="@+id/imageButton_room1"
+        android:layout_alignRight="@+id/imageButton_room1"
+        android:layout_alignEnd="@+id/imageButton_room1" />
+
+    <TextView
+        android:text="Room Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@color/green"
+        android:gravity="center"
+        android:textStyle="normal|bold"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/textView_room1"
+        android:layout_alignBottom="@+id/textView_room1"
+        android:layout_alignLeft="@+id/imageButton_room2"
+        android:layout_alignStart="@+id/imageButton_room2"
+        android:layout_alignRight="@+id/imageButton_room2"
+        android:layout_alignEnd="@+id/imageButton_room2" />
+
+</RelativeLayout>

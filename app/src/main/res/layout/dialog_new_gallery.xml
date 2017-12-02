@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/round_dialog"
+        android:id="@+id/relativeLayout_dialog">
+
+
+        <TextView
+            android:text="@string/add_new_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textView_version"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="@string/btn_submit"
+            android:layout_height="30dp"
+            android:id="@+id/button_submit"
+            android:minHeight="0dp"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/round_upload"
+            android:textAllCaps="false"
+            android:typeface="sans"
+            android:layout_width="80dp" />
+
+        <Button
+            android:text="@string/btn_cancel"
+            android:layout_height="30dp"
+            android:id="@+id/button_cancel"
+            android:background="@color/transparent"
+            android:minHeight="0dp"
+            android:textColor="@color/darkgray"
+            android:textSize="13dp"
+            android:layout_toLeftOf="@+id/button_submit"
+            android:layout_toStartOf="@+id/button_submit"
+            android:layout_alignTop="@+id/button_submit"
+            android:layout_alignBottom="@+id/button_submit"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="false"
+            android:typeface="sans"
+            android:layout_width="80dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText_folder_name"
+            android:hint="@string/enter_gallery_name"
+            android:background="@color/transparent"
+            android:textColor="@color/darkgray"
+            android:textSize="14sp"
+            android:typeface="sans"
+            android:layout_below="@+id/textView_version"
+            android:layout_alignLeft="@+id/textView_version"
+            android:layout_alignStart="@+id/textView_version"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/button_submit"
+            android:layout_toStartOf="@+id/button_submit" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/editText_folder_name"
+            android:layout_alignLeft="@+id/editText_folder_name"
+            android:layout_alignStart="@+id/editText_folder_name"
+            android:layout_alignRight="@+id/editText_folder_name"
+            android:layout_alignEnd="@+id/editText_folder_name"
+            android:background="@color/bgColor_overlay"
+            android:layout_marginTop="5dp">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>
